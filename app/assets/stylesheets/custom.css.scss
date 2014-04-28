@@ -16,3 +16,33 @@
 .city-btn-landing{
 	min-width:120px;
 }
+
+.main-text-container-landing .transparency{
+	background-color:#27ae60;
+	opacity:0.5;
+	z-index:-1;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:550px;
+	height:150px;
+}
+.text-banner-landing{
+	position:relative;
+	color:white;
+}
+
+.sub-text-container-1 .transparency{
+	background-color:#27ae60;
+	opacity:0.5;
+	z-index:-1;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:350px;
+	height:30px;	
+}
+.sub-text-banner-1{
+	position:relative;
+	color:white;
+}

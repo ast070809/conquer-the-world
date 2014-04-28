@@ -28,6 +28,13 @@
             %a.dropdown-toggle{"data-close-others" => "false", "data-delay" => "0", "data-hover" => "dropdown",  href: root_path}
               Home
           %li
+            =link_to "Services offered", services_path, class: 'dropdown-toggle', "data-close-others" => "false", "data-delay" => "0", "data-hover" => "dropdown"
+          %li
+            =link_to "Clients", clients_path
+          %li
+            =link_to "Our Team", team_path  
+          %li
+            =link_to "Contact Us", contact_path
           %li
             -# if user_signed_in?
               =#link_to 'Sign out', destroy_user_session_path, method: :delete

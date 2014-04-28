@@ -2,6 +2,10 @@ Arthmitee::Application.routes.draw do
 
   root 'static_pages#home'
 
+  get '/services', to: "static_pages#services"
+  get '/clients', to: "static_pages#clients"
+  get '/contact', to: "static_pages#contact"
+  get '/team', to: "static_pages#team"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
