@@ -1,2 +1,238 @@
-%h1
-	This is going to be the About Us page
+/ === Content Part ===
+.container
+  .margin-bottom-50
+    %img.img-responsive{alt: "", src: "assets/img/sliders/revolution/bg8.jpg"}/
+  .tag-box.tag-box-v2
+    %h2 About Our Company
+    %p Et harum quidem rerum facilis est et expedita distinctio lorem ipsum dolor sit amet consectetur adipiscing elit. Ut non libero consectetur adipiscing elit magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat.
+  .margin-bottom-20.clearfix
+  .row
+    / Accordion
+    .col-md-7.md-margin-bottom-40
+      #accordion-1.panel-group.acc-v1
+        .panel.panel-default
+          .panel-heading
+            %h4.panel-title
+              %a.accordion-toggle{"data-parent" => "#accordion-1", "data-toggle" => "collapse", href: "#collapse-One"}
+                Collapsible Group Item #1
+          #collapse-One.panel-collapse.collapse.in
+            .panel-body
+              .row
+                .col-md-4
+                  %img.img-responsive{alt: "", src: "assets/img/new/img5.jpg"}/
+                .col-md-8
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+        .panel.panel-default
+          .panel-heading
+            %h4.panel-title
+              %a.accordion-toggle{"data-parent" => "#accordion-1", "data-toggle" => "collapse", href: "#collapse-Two"}
+                Collapsible Group Item #2
+          #collapse-Two.panel-collapse.collapse
+            .panel-body
+              .row
+                .col-md-8
+                  %p Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                  %ul.list-unstyled
+                    %li
+                      %i.icon-ok.color-green
+                      Donec id elit non mi porta gravida at eget metus..
+                    %li
+                      %i.icon-ok.color-green
+                      Fusce dapibus, tellus ac cursus comodo egetine..
+                    %li
+                      %i.icon-ok.color-green
+                      Food truck quinoa nesciunt laborum eiusmod runch..
+                .col-md-4
+                  %img.img-responsive{alt: "", src: "assets/img/main/6.jpg"}/
+        .panel.panel-default
+          .panel-heading
+            %h4.panel-title
+              %a.accordion-toggle{"data-parent" => "#accordion-1", "data-toggle" => "collapse", href: "#collapse-Three"}
+                Collapsible Group Item #3
+          #collapse-Three.panel-collapse.collapse
+            .panel-body
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Food truck quinoa nesciunt laborum eiusmodolf moon tempor, sunt aliqua put a bird. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+    / End Accordion
+    / Testimonials
+    .col-md-5
+      #testimonials-1.carousel.slide.testimonials.testimonials-v1
+        .carousel-inner
+          .item.active
+            %p Crasjusto ducimus qui cupiditate non provident, similique sunt in culpaid est anditiis praesentium praesentium blanditiis praesentium non provident, similique sunt in culpaid est anditiis praesentium praesentium..
+            .testimonial-info
+              %img{alt: "", src: "assets/img/testimonials/img1.jpg"}/
+              %span.testimonial-author
+                Jeremy Asigner
+                %em Web Developer, Unify Theme.
+          .item
+            %p Crasjusto ducimus qui cupiditate non provident, similique sunt in culpaid est anditiis praesentium praesentium blanditiis praesentium non provident, similique sunt in culpaid est anditiis praesentium praesentium..
+            .testimonial-info
+              %img{alt: "", src: "assets/img/testimonials/user.jpg"}/
+              %span.testimonial-author
+                User
+                %em Java Developer, Htmlstream
+          .item
+            %p Crasjusto ducimus qui cupiditate non provident, similique sunt in culpaid est anditiis praesentium praesentium blanditiis praesentium non provident, similique sunt in culpaid est anditiis praesentium praesentium..
+            .testimonial-info
+              %img{alt: "", src: "assets/img/testimonials/img2.jpg"}/
+              %span.testimonial-author
+                Kate Davenport
+                %em Web Designer, Google Inc.
+        .carousel-arrow
+          %a.left.carousel-control{"data-slide" => "prev", href: "#testimonials-1"}
+            %i.icon-angle-left
+          %a.right.carousel-control{"data-slide" => "next", href: "#testimonials-1"}
+            %i.icon-angle-right
+    / End Testimonials
+  .margin-bottom-50
+  / Our Team
+  .headline
+    %h2 Meet Our Team
+  .row.team
+    .col-sm-3
+      .thumbnail-style
+        %img.img-responsive{alt: "", src: "assets/img/team/1.jpg"}/
+        %h3
+          %a Jack Bour
+          %small Chief Executive Officer
+        %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...
+        %ul.list-unstyled.list-inline.team-socail
+          %li
+            %a{href: "#"}
+              %i.icon-facebook
+          %li
+            %a{href: "#"}
+              %i.icon-twitter
+          %li
+            %a{href: "#"}
+              %i.icon-google-plus
+    .col-sm-3
+      .thumbnail-style
+        %img.img-responsive{alt: "", src: "assets/img/team/3.jpg"}/
+        %h3
+          %a Kate Metus
+          %small Project Manager
+        %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...
+        %ul.list-unstyled.list-inline.team-socail
+          %li
+            %a{href: "#"}
+              %i.icon-facebook
+          %li
+            %a{href: "#"}
+              %i.icon-twitter
+          %li
+            %a{href: "#"}
+              %i.icon-google-plus
+    .col-sm-3
+      .thumbnail-style
+        %img.img-responsive{alt: "", src: "assets/img/team/2.jpg"}/
+        %h3
+          %a Porta Gravida
+          %small VP of Operations
+        %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...
+        %ul.list-unstyled.list-inline.team-socail
+          %li
+            %a{href: "#"}
+              %i.icon-facebook
+          %li
+            %a{href: "#"}
+              %i.icon-twitter
+          %li
+            %a{href: "#"}
+              %i.icon-google-plus
+    .col-sm-3
+      .thumbnail-style
+        %img.img-responsive{alt: "", src: "assets/img/team/4.jpg"}/
+        %h3
+          %a Donec Elit
+          %small Director, R & D Talent
+        %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...
+        %ul.list-unstyled.list-inline.team-socail
+          %li
+            %a{href: "#"}
+              %i.icon-facebook
+          %li
+            %a{href: "#"}
+              %i.icon-twitter
+          %li
+            %a{href: "#"}
+              %i.icon-google-plus
+  / /team
+  / End Our Team
+  / Our Clients
+  #clients-flexslider.flexslider.home.clients
+    .headline
+      %h2 Our Clients
+    %ul.slides
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/hp_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/hp.png"}/
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/igneus_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/igneus.png"}/
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/vadafone_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/vadafone.png"}/
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/walmart_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/walmart.png"}/
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/shell_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/shell.png"}/
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/natural_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/natural.png"}/
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/aztec_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/aztec.png"}/
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/gamescast_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/gamescast.png"}/
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/cisco_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/cisco.png"}/
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/everyday_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/everyday.png"}/
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/cocacola_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/cocacola.png"}/
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/spinworkx_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/spinworkx.png"}/
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/shell_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/shell.png"}/
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/natural_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/natural.png"}/
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/gamescast_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/gamescast.png"}/
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/everyday_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/everyday.png"}/
+      %li
+        %a{href: "#"}
+          %img{alt: "", src: "assets/img/clients/spinworkx_grey.png"}/
+          %img.color-img{alt: "", src: "assets/img/clients/spinworkx.png"}/
+  / /flexslider
+  / End Our Clients
+/ /container
+/ === End Content Part ===
